@@ -1,4 +1,32 @@
+/* ----------------------------------------------------------- */
+                            /* decorations */
+/* ----------------------------------------------------------- */
+
 .slide.whoRV {
     background: linear-gradient(117.28deg, #F2709C 10.57%, #FF9472 94.01%);
-
 }
+
+.whoRV-strip-left, .whoRV-strip-right {
+    background: #1C242C;
+    height: 80%;
+    width: 45px;
+    position: absolute;
+}
+
+.whoRV-strip-left {
+    bottom: 0;
+    left: 0;
+    /* background: linear-gradient(0.12deg, #F2709C 2.63%, #FF9472 94.44%); */
+    border-radius: 0px 61px 0px 0px;
+}
+
+.whoRV-strip-right {
+    bottom: 0;
+    right: 0;
+    /* background: linear-gradient(180deg, #FF9472 0%, #FB8881 100%); */
+    border-radius: 61px 0px 0px 0px;
+}
+
+/* ----------------------------------------------------------- */
+                            /* content */
+/* ----------------------------------------------------------- */

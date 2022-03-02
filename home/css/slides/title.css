@@ -1,10 +1,11 @@
-/* decorations */
+/* ----------------------------------------------------------- */
+                            /* decorations */
+/* ----------------------------------------------------------- */
 .strip-left, .strip-right {
     height: 80%;
     width: 45px;
     position: absolute;
     /* border: 1px solid black; */
-    position: absolute;
 }
 
 .strip-left {
@@ -21,7 +22,9 @@
     border-radius: 61px 0px 0px 0px;
 }
 
-/* content */
+/* ----------------------------------------------------------- */
+                            /* content */
+/* ----------------------------------------------------------- */
 
 .content {
     display: flex;

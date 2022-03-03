@@ -30,3 +30,74 @@
 /* ----------------------------------------------------------- */
                             /* content */
 /* ----------------------------------------------------------- */
+
+.whoRV .content {
+    display: block;
+}
+
+.whoRV-content-pack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.whoRV-content-left, .whoRV-content-right {
+    display: block;
+}
+
+.whoRV-logo-svg, .whoRV-link {
+    position: absolute;
+}
+
+.whoRV-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.whoRV-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoRV-heading {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-top: 20vh;
+    margin-right: 12vw;
+    margin-left: 3vw;
+}
+
+.whoRV-logo-svg {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    background-color: #1C242C;
+    margin-top: 24vh;
+}
+
+.whoRV-link-text{
+    font-size: 0.35em;
+    margin-top: 52vh;
+}
+
+.whoRV-text {
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 0.55em;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-bottom: 11vh;
+}
+
+.whoRV-content-left a{
+    margin-left: 32vw;
+}
+
+.whoRV-link:hover {
+    text-decoration: underline;
+}

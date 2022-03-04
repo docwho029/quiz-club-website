@@ -1,0 +1,104 @@
+/* ----------------------------------------------------------- */
+                            /* decorations */
+/* ----------------------------------------------------------- */
+
+.slide.gallery {
+    background: linear-gradient(294.95deg, #161617 6.48%, #202D3A 88.03%);
+}
+
+
+.gallery-strip-top {
+    border-radius: 0px 0px 169px 169px;
+    position: absolute;
+    height: 45px;
+    width: 60%;
+    background: linear-gradient(107.12deg, #FE8F7A 22.79%, #FA8489 75.41%);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* ----------------------------------------------------------- */
+                            /* content */
+/* ----------------------------------------------------------- */
+
+.gallery .content {
+    display: block;
+}
+
+.gallery-first-row, .gallery-second-row {
+    width: 90%;
+    height: 28vh;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-first-row {
+    margin-top: 15vh;
+    grid-template-columns: 3fr 7fr;
+    margin-bottom: 2vh;
+}
+
+.gallery-second-row {
+    grid-template-columns: 7fr 3fr;
+}
+
+.gallery-third-row {
+    margin-top: 4vh;
+}
+
+.gallery-first-row-text, .gallery-second-row-text, .gallery-third-row-text {
+    font-weight: 700;
+    font-size: 0.6em;
+    margin: auto;
+}
+
+.gallery-first-row-text {
+    text-align: left;
+    width: 100%;
+}
+
+.gallery-second-row-text {
+    text-align: right;
+    width: 100%;
+}
+
+.gallery-third-row-text {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-third-row-button {
+    font-weight: 500;
+    font-size: 0.4em;
+    padding: 0.6em 1.3em;
+    background: linear-gradient(95.17deg, #FF9574 0%, #FA8488 173.04%);
+    border-radius: 54px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+.gallery-image {
+    width: 90%;
+    height: 90%;
+    background: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 26px;
+}
+
+.gallery-first-row-pictures, .gallery-second-row-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-first-row-pictures .gallery-image {
+    margin-left: auto;
+}
+
+.gallery-second-row-pictures .gallery-image {
+    margin-right: auto;
+}

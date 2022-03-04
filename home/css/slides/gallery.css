@@ -68,6 +68,11 @@
     text-align: center;
 }
 
+.gallery-third-row-button-link {
+    width: min-content;
+    height: min-content;
+}
+
 .gallery-third-row-button {
     font-weight: 500;
     font-size: 0.4em;

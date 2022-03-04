@@ -33,7 +33,7 @@
 
 .whoRV .content {
     display: grid;
-    grid-template-rows: 6fr 4fr;
+    grid-template-rows: 5.5fr 4.5fr;
 }
 
 .whoRV-text {
@@ -85,4 +85,30 @@
     width: 16px;
     height: 16px;
     margin-left: 4px;
+}
+
+@media(max-width: 1010px) {
+    .whoRV-heading {
+        font-size: 1.5em;
+        margin-top: 27vh;
+    }
+    .whoRV-text {
+        font-size: 0.45em;
+    }
+    .whoRV-logo-svg {
+        margin-top: 23vh;
+    }
+}
+@media(max-width: 960px) {
+    .whoRV-logo-svg {
+        margin-top: 26vh;
+    }
+}
+@media(max-width: 840px) {
+    .whoRV-heading {
+        font-size: 1.25em;
+    }
+    .whoRV-link-text {
+        font-size: 0.25em;
+    }
 }

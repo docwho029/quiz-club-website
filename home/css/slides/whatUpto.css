@@ -1,0 +1,71 @@
+.whatUpto {
+  font-size: initial;
+}
+
+.whatUpto .content {
+  flex-direction: column;
+  justify-content: start;
+  padding: 4.5em 2em 0;
+}
+
+.whatUpto-title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.whatUpto-card-container {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 1.5em;
+}
+
+.whatUpto-card {
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+  border: 2px solid #fbfbfb;
+  border-radius: 99px;
+  overflow: hidden;
+  max-width: 320px;
+}
+
+.whatUpto .top-section {
+  display: grid;
+  place-items: center;
+  gap: 1em;
+  width: fit-content;
+  padding: 2em 0 1em;
+  backdrop-filter: blur(70px);
+}
+
+.whatUpto .circle {
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.whatUpto .card-info {
+  text-align: center;
+  width: 70%;
+}
+
+.whatUpto .event-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 0px 0px 99px 99px;
+  padding-block: 1em;
+  text-align: center;
+  background-color: #fff;
+  color: #5b5b5b;
+}
+
+.gallery-link {
+  width: 100%;
+  text-align: center;
+}

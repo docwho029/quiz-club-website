@@ -32,7 +32,17 @@
 /* ----------------------------------------------------------- */
 
 .whoRV .content {
-    display: block;
+    display: grid;
+    grid-template-rows: 5.5fr 4.5fr;
+}
+
+.whoRV-text {
+    font-weight: 600;
+    font-size: 0.55em;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .whoRV-content-pack {
@@ -40,64 +50,65 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.whoRV-content-left, .whoRV-content-right {
-    display: block;
+.whoRV-logo-svg {
+    width: 22vw;
+    height: 22vw;
+    background: #1C242C;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19vh;
+    z-index: -1;
 }
 
-.whoRV-logo-svg, .whoRV-link {
-    position: absolute;
-}
-
-.whoRV-content-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.whoRV-link-text {
+    font-size: 0.35em;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-}
-
-.whoRV-content-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    z-index: 0;
+    margin-top: -7vh;
 }
 
 .whoRV-heading {
     font-size: 1.75em;
     font-weight: 600;
-    margin-top: 20vh;
-    margin-right: 12vw;
-    margin-left: 3vw;
-}
-
-.whoRV-logo-svg {
-    width: 22vw;
-    height: 22vw;
-    border-radius: 50%;
-    background-color: #1C242C;
     margin-top: 24vh;
-}
-
-.whoRV-link-text{
-    font-size: 0.35em;
-    margin-top: 52vh;
-}
-
-.whoRV-text {
-    position: absolute;
-    bottom: 0;
-    font-weight: 600;
-    font-size: 0.55em;
-    margin-left: 12vw;
-    margin-right: 12vw;
-    margin-bottom: 11vh;
-}
-
-.whoRV-content-left a{
-    margin-left: 32vw;
+    width: 70%;
 }
 
 .whoRV-link:hover {
     text-decoration: underline;
+}
+
+.whoRV-open-in-new {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+
+@media(max-width: 1010px) {
+    .whoRV-heading {
+        font-size: 1.5em;
+        margin-top: 27vh;
+    }
+    .whoRV-text {
+        font-size: 0.45em;
+    }
+    .whoRV-logo-svg {
+        margin-top: 23vh;
+    }
+}
+@media(max-width: 960px) {
+    .whoRV-logo-svg {
+        margin-top: 26vh;
+    }
+}
+@media(max-width: 840px) {
+    .whoRV-heading {
+        font-size: 1.25em;
+    }
+    .whoRV-link-text {
+        font-size: 0.25em;
+    }
 }

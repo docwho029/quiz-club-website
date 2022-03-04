@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DPSRPK Quiz Club</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/slides/title.css">
-    <link rel="stylesheet" href="css/slides/whoRV.css">
-    <link rel="stylesheet" href="css/slides/gallery.css">
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/slides/title.css" />
+    <link rel="stylesheet" href="css/slides/whoRV.css" />
+    <link rel="stylesheet" href="./css/slides/whatUpto.css" />
+    <link rel="stylesheet" href="./css/slides/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/59943ffdf9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
 </head>
 <body>
     <nav>
-        <div class="nav-title">
-            <div class="sign-dpsrpk">DPSRPK</div>
-            <div class="sign-quizclub">Quiz Club</div>
-        </div>
-        <div class="nav-main">
-            <div class="nav-home"><a href="#">home</a></div>
-            <div class="nav-members"><a href="#">members</a></div>
-            <div class="nav-gallery"><a href="#">gallery</a></div>
-            <div class="nav-qsociety"><a href="#">Quizzing Society</a></div>
-        </div>
+      <div class="nav-title">
+        <div class="sign-dpsrpk">DPSRPK</div>
+        <div class="sign-quizclub">Quiz Club</div>
+      </div>
+      <div class="nav-main">
+        <div class="nav-home"><a href="#">home</a></div>
+        <div class="nav-members"><a href="#">members</a></div>
+        <div class="nav-gallery"><a href="#">gallery</a></div>
+        <div class="nav-qsociety"><a href="#">Quizzing Society</a></div>
+      </div>
     </nav>
     <main>
+<<<<<<< HEAD
         <section class="slide title">
             <section class="decorations">
                 <div class="strip-left"></div>
@@ -171,7 +181,20 @@
                     <div class="main-title">Quiz Club</div>
                 </div>
             </section>
+=======
+      <section class="slide title">
+        <section class="decorations">
+          <div class="strip-left"></div>
+          <div class="strip-right"></div>
         </section>
+        <section class="content">
+          <div class="title-content-box">
+            <div class="logo-svg"></div>
+            <div class="main-title">Quiz Club</div>
+          </div>
+>>>>>>> 549a104c4ab32de218f9db24ea3e73d69e849c41
+        </section>
+      </section>
         <section class="slide whoRV">
             <section class="decorations">
                 <div class="whoRV-strip-left"></div>
@@ -182,9 +205,9 @@
                     <div class="whoRV-content-left">
                         <div class="whoRV-logo-svg"></div>
                         <!-- redirects to board page -->
-                        <a href="#"><div class="whoRV-link-text">
-                            <div class="whoRV-link">visit board members page<span class="material-icons whoRV-open-in-new">open_in_new</span></div>
-                        </div></a>
+                        <div class="whoRV-link-text">
+                            <div class="whoRV-link"><a href="#">visit board members page<img class="whoRV-open-in-new" src="../resources/open-in-new.svg"></img></a></div>
+                        </div>
                     </div>
                     <div class="whoRV-content-right">
                         <div class="whoRV-heading">Who are we?</div>
@@ -195,9 +218,38 @@
                 </div>
             </section>
         </section>
-        <section class="slide whatUpto">3</section>
-        <section class="slide quizzingSociety">4</section>
-        <section class="slide gallery">
+      <section class="slide whatUpto">
+        <section class="decorations"></section>
+        <section class="content">
+          <h2 class="whatUpto-title">What we've been upto</h2>
+          <div class="whatUpto-card-container">
+            <div class="whatUpto-card">
+              <div class="top-section">
+                <div class="circle"></div>
+                <p class="card-info">
+                  Finalists, SnE Quiz, during the second last round.
+                </p>
+              </div>
+              <p class="event-name">Quizzinius 2021</p>
+            </div>
+            <div class="whatUpto-card">
+              <div class="top-section">
+                <div class="circle"></div>
+                <p class="card-info">
+                  Finalists, SnE Quiz, during the second last round.
+                </p>
+              </div>
+              <div class="event-name">Quizathon 2021</div>
+            </div>
+          </div>
+          <a class="gallery-link" href="#"
+            >Visit the gallery page
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </section>
+      </section>
+      <section class="slide quizzingSociety">4</section>
+<section class="slide gallery">
             <section class="decorations">
                 <div class="gallery-strip-top"></div>
             </section>
@@ -224,9 +276,7 @@
                 </div>
             </section>
         </section>
-        <footer class="slide footer"></footer>
+      <footer class="slide footer"></footer>
     </main>
-</body>
-
-
+  </body>
 </html>

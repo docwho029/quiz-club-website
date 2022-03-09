@@ -1,0 +1,81 @@
+/* ---------------------------------- */
+            /* decorations */
+/* ---------------------------------- */
+
+.bubble-top-left, .bubble-bottom-right {
+    width: min(370px, 40vw);
+    height: 40%;
+}
+
+.bubble-top-left {
+    border-bottom-right-radius: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0.12deg, #F2709C 2.63%, #FF9472 94.44%);
+}
+
+.bubble-bottom-right {
+    border-top-left-radius: 150px;
+    height: 49%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(145.87deg, #F4739B -9.77%, #FB8881 89.06%);
+}
+
+/* ---------------------------------- */
+            /* content */
+/* ---------------------------------- */
+
+.swiper-container {
+    position: absolute;
+    left: 0;
+    bottom: 5vh;
+    width: 53vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 0 150px 150px 0;
+    overflow: hidden;
+    padding-right: 0.8em;
+    padding-left: 0.5em;
+}
+
+.title-h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.year-swiper {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.year-slide {
+    color: #9FA2A5;
+    font-size: 0.6em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* padding: 1em; */
+}
+
+.year-slide.swiper-slide-next {
+    color: #6E7276;
+}
+
+.year-slide.swiper-slide-active {
+    /* color: #1B2128; */
+    color: #FC8C7D;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FC8C7D;
+}

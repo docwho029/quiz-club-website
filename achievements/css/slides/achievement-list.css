@@ -1,0 +1,96 @@
+.bar-top-right {
+    width: min(370px, 40vw);
+    height: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border: 1px solid white;s */
+    background: linear-gradient(147.92deg, #F9808C 17.65%, #FB8881 89.06%);
+    border-bottom-left-radius: 150px;
+}
+
+.bar-top-left {
+    width: min(350px, 30vw);
+    height: 69%;
+    position: absolute;
+    left: 0;
+    top: 22%;
+    background: linear-gradient(145.87deg, #FF9573 -9.77%, #F77C90 89.06%);
+    border-radius: 0 150px 150px 0;
+
+}
+
+/* ----------------------- */
+/* content */
+/* ----------------------- */
+
+/* .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.achievements-swiper {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 15vh;
+    bottom: 5vh;
+    /* background-color: #F77C90; */
+}
+.achievements-slide {
+    height: 40%;
+    background: #FBFBFB;
+    border-radius: 53px;
+    color: #F77C90;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.achievements-swiper .swiper-pagination-bullet {
+    background-color: #fffffffb;
+    /* opacity: 1; */
+}
+
+.achievements-swiper .swiper-pagination-bullet-active {
+    background-color: #FC8C7D;
+}
+
+.achievelist-position, .achievelist-title,.achievelist-org {
+    font-size: 0.3em;
+    text-align: center;
+    width: 100%;
+    color: black;
+    /* border: 1px solid black; */
+    font-weight: 600;
+    /* padding: 0.3em; */
+}
+
+.achievelist-position {
+    font-size: 0.9em;
+    padding: 0.2em;
+    background-color: #FDDD6D;
+    font-weight: 700;
+    color: #FBFBFB;
+}
+
+.achievelist-title {
+    margin-top: 7%;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    color: #6E7276;
+
+}
+
+.achievelist-org {
+    margin-top: 1.8%;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    color: #9FA2A5;
+
+}

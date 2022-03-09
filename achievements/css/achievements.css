@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+/* ----------------------------------------------------------- */
+/* nav */
+/* ----------------------------------------------------------- */
+
+nav {
+  position: fixed;
+  /* background-color: aqua; */
+  height: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.7em;
+  padding-left: 45px;
+  padding-right: 45px;
+  z-index: 100;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* background-color: green; */
+  justify-content: center;
+}
+.sign-dpsrpk {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+.sign-quizclub {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.nav-main {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-main > * {
+  padding: 0.6em 1.3em;
+}
+.nav-main:hover {
+  cursor: pointer;
+}
+
+.nav-home {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-qsociety {
+  background: linear-gradient(92.51deg, #f3719d 0.59%, #ff9473 102.35%);
+  border-radius: 54px;
+  padding: 0.6em 1.3em;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------------------------------------- */
+/* slides */
+/* ----------------------------------------------------------- */
+.slide {
+  height: 100vh;
+  width: 100%;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  scroll-snap-align: start;
+  font-size: 3em;
+  background: linear-gradient(294.95deg, #161617 6.48%, #202d3a 88.03%);
+  position: relative;
+}
+
+.slide.footer {
+  background-color: blueviolet;
+  height: 30vh;
+}
+
+.decorations,
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

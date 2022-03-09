@@ -1,0 +1,111 @@
+/* ----------------------------------------------------------- */
+                            /* decorations */
+/* ----------------------------------------------------------- */
+
+.qs-top{
+    position: absolute;
+    background: linear-gradient(113.49deg, #FF9674 27.94%, #FA8488 94.63%);
+    transform: rotate(-180deg);
+    height:20vh;
+    width: 90vw;
+    top: 0;
+    left: 5vw;
+}
+
+.qs-bottom{
+    position: absolute;
+    background: linear-gradient(112.42deg, #FF9473 29.21%, #F87E8F 97.84%);
+    height:20vh;
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+}
+
+.qs-left{
+    position: absolute;
+    background: linear-gradient(34.15deg, #FF9473 21.48%, #FC8983 59.22%);
+    height: 80vh;
+    width: 10vw;
+    top: 0;
+    left: 0;
+}
+
+.qs-right{
+    position: absolute;
+    background: linear-gradient(112.42deg, #FF9674 27.94%, #F87E8F 97.84%);
+    height:80vh;
+    width: 10vw;
+    top: 0;
+    right: 0;
+}
+
+/* ----------------------------------------------------------- */
+                            /* content */
+/* ----------------------------------------------------------- */
+
+.quizzingSociety .content {
+    font-size: initial;
+}
+
+.black-box{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    width: 90%;
+    height:80%;
+    background-color: rgba(29, 37, 45, 1);
+    border-radius: 80px;
+    margin:auto;
+}
+
+.black-left{
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+}
+
+.black-right{
+    display: flex;
+    flex: 1 1 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.title-text{
+    width: 60%;
+    font-size: 6.5vmin;
+    font-weight: 1000;
+    margin-top: 15vh;
+    margin-left: 17.5%;
+    text-align: left;
+    line-height: 140%;
+}
+
+.para-text{
+    width: 70%;
+    font-size: 3.8vmin;
+    margin-top: 6vh;
+    margin-left: 17.5%;
+    text-align: left;
+    line-height: 150%;
+}
+
+.button{
+    font-weight: 500;
+    font-size: 3vmin;
+    padding: 0.4em 1em;
+    background: linear-gradient(95.17deg, #FF9574 0%, #FA8488 173.04%);
+    border-radius: 54px;
+    margin-top: 8vh;
+    margin-left: 20%;
+    width: fit-content;
+}
+
+.square{
+    height: 40vmin;
+    width: 20vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 54px;
+    margin: auto;
+}

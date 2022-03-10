@@ -1,0 +1,65 @@
+/* ----------------------------------------------------------- */
+/* decorations */
+/* ----------------------------------------------------------- */
+
+.footer .decorations{
+  background: linear-gradient(107.12deg, #FF9473 22.79%, #FB8881 75.41%, #F77C90 75.41%);
+  border-radius: 109px 0px 0px 0px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* content */
+/* ----------------------------------------------------------- */
+
+.footer {
+  font-size: initial;
+}
+
+.footer .content {
+  padding: 1em 3em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-heading {
+  font-size: 2rem;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1em;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.25em;
+}
+
+.page-links .link {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.page-links i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  gap: 2em;
+  font-size: 2rem;
+}
+
+.social-links i{
+  cursor: pointer;
+}

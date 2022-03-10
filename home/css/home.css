@@ -99,7 +99,8 @@ a {
 
 .slide.footer {
   background-color: blueviolet;
-  height: 30vh;
+  height: auto;
+  min-height: 40vh;
 }
 
 .decorations,

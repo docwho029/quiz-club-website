@@ -66,66 +66,6 @@
             <section class="content">
               <div class="swiper achievements-swiper">
                 <div class="achievements-wrapper swiper-wrapper">
-                  <div data-micromodal-trigger="modal-1" class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
-                  <div class="achievements-slide swiper-slide">
-                    <div class="achievelist-position">#1</div>
-                    <div class="achievelist-title">Quizzitch Cup School Quiz</div>
-                    <div class="achievelist-org">NIT Durgapur</div>
-                  </div>
                 </div> 
                 <div class="swiper-pagination"></div>
               </div>
@@ -134,59 +74,18 @@
 
       <footer class="slide footer"></footer>
     </main>
-
-    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-          
-
-          <div class="modal-row modal-row-close">
-            <button class="modal__close" aria-label="Close modal" data-micromodal-close>close</button>
-          </div>
-
-          <div class="modal-row modal-row-title">
-            <div class="modal-title-position">#1</div>
-            <div class="modal-title-quiz">HDFC ERGO Insurance Awareness Award Junior</div>
-          </div>
-          <div class="modal-row modal-row-details">
-            <div class="modal-details-host">NIT Durgapur</div>
-            <div class="modal-details-date">4/10/2021</div>
-          </div>
-          <div class="modal-row modal-row-members">
-            <button class="modal-row-members-1">
-              <div class="modal-row-members-image"></div>
-              <div class="modal-row-members-name">Prachurjo Dutta Roy</div>
-            </button>
-            <button class="modal-row-members-2">
-              <div class="modal-row-members-image"></div>
-              <div class="modal-row-members-name">Prachurjo Dutta Roy</div>
-            </button>
-            <button class="modal-row-members-3">
-              <div class="modal-row-members-image"></div>
-              <div class="modal-row-members-name">Prachurjo Dutta Roy</div>
-            </button>
-            <button class="modal-row-members-4">
-              <div class="modal-row-members-image"></div>
-              <div class="modal-row-members-name">Prachurjo Dutta Roy</div>
-            </button>
-          </div> 
-          <div class="modal-row modal-row-done">
-            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Done</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    
   </body>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="generate.js"></script>
   <script>
 
       // -----------------------------------
       // year slider
       // -----------------------------------
 
+    var currentTime = new Date()
+    update(currentTime.getFullYear().toString().slice(2))
     var swiper = new Swiper(".year-swiper", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -213,6 +112,7 @@
 
       swiper.on('slideChange', function () {
         console.log(swiper.slides[swiper.activeIndex].textContent);
+        update(swiper.slides[swiper.activeIndex].textContent.split("-")[1])
       })
       swiper.on('click', () => {
         swiper.slideTo(swiper.clickedIndex);
@@ -240,18 +140,6 @@
           
         }
       });
-
-
-    
-    MicroModal.init({
-      awaitCloseAnimation: true,// set to false, to remove close animation
-      onShow: function(modal) {
-        console.log("micromodal open");
-      },
-      onClose: function(modal) {
-        console.log("micromodal close");
-      }
-    });
     
 
   </script>
